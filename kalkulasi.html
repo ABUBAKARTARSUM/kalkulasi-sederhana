@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator Sederhana</title>
+  </head>
+  <body>
+    <h3>Penjumlahan</h3>
+    <input type="number" id="bil1" placeholder="masukkan bilangan" /> + <input type="number" id="bil2" placeholder="masukkan bilangan" /> = <input type="number" id="hasilPenjumlahan" placeholder="hasil kalkulasi " />
+    <button onclick="penjumlahan()">Kalkulasikan</button>
+
+    <h3>Pengurangan</h3>
+    <input type="number" id="bil3" placeholder="masukkan bilangan" /> - <input type="number" id="bil4" placeholder="masukkan bilangan" /> = <input type="number" id="hasilPengurangan" placeholder="hasil kalkulasi " />
+    <button onclick="pengurangan()">Kalkulasikan</button>
+
+    <h3>Perkalian</h3>
+    <input type="number" id="bil5" placeholder="masukkan bilangan" /> x <input type="number" id="bil6" placeholder="masukkan bilangan" /> = <input type="number" id="hasilPerkalian" placeholder="hasil kalkulasi " />
+    <button onclick="perkalian()">Kalkulasikan!</button>
+
+    <h3>Pembagian</h3>
+    <input type="number" id="bil7" placeholder="masukkan bilangan" /> / <input type="number" id="bil8" placeholder="masukkan bilangan" /> = <input type="number" id="hasilPembagian" placeholder="hasil kalkulasi " />
+    <button onclick="pembagian()">Kalkulasikan!</button>
+
+    <script>
+      function penjumlahan() {
+        let bil1 = document.getElementById('bil1').value;
+        let bil2 = document.getElementById('bil2').value;
+        let hasilPenjumlahan = document.getElementById('hasilPenjumlahan');
+        hasilPenjumlahan.value = parseInt(bil1) + parseInt(bil2);
+      }
+      function pengurangan() {
+        let bil3 = document.getElementById('bil3').value;
+        let bil4 = document.getElementById('bil4').value;
+        let hasilPengurangan = document.getElementById('hasilPengurangan');
+        hasilPengurangan.value = parseInt(bil3) - parseInt(bil4);
+      }
+      function perkalian() {
+        let bil5 = document.getElementById('bil5').value;
+        let bil6 = document.getElementById('bil6').value;
+        let hasilPerkalian = document.getElementById('hasilPerkalian');
+        hasilPerkalian.value = parseInt(bil5) * parseInt(bil5);
+      }
+      function pembagian() {
+        let bil7 = document.getElementById('bil7').value;
+        let bil8 = document.getElementById('bil8').value;
+        let hasilPembagian = document.getElementById('hasilPembagian');
+        hasilPembagian.value = parseInt(bil7) / parseInt(bil8);
+      }
+    </script>
+  </body>
+</html>
